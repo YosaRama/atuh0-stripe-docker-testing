@@ -5,6 +5,7 @@ import { useSession, signIn } from "next-auth/react";
 
 // Components
 import AppContainersMain from "app/components/containers/main";
+import AppCheckoutForm from "app/components/libs/checkout-form";
 
 // Styles
 import s from "./index.module.scss";
@@ -63,6 +64,9 @@ function AppContentsPublicPage() {
                   >
                     Go To Member Page
                   </Button>
+                </Col>
+                <Col span={6} className={s.btn}>
+                  <AppCheckoutForm />
                 </Col>
               </>
             )}
